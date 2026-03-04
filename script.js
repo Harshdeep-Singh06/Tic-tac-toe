@@ -6,6 +6,7 @@ for (let i = 0; i < box.length; i++) {
     box[i].addEventListener('click', function(e){
         if(this.innerText === ""){
           this.innerText = currentPlayer
+            checkWinner()
           if(currentPlayer === "X"){
             currentPlayer = "O"
           }else{
@@ -32,6 +33,11 @@ function checkWinner(){
         let pos2 = box[pattern[1]].innerText
         let pos3 = box[pattern[2]].innerText
         
-        if(pos1 !== "" && pos2 !== "" && pos3 !== "")
+        if(pos1 !== "" && pos2 !== "" && pos3 !== ""){
+
+            if(pos1 === pos2 && pos2 === pos3){
+                alert(pos1 + " wins")
+            }
+        }
     }
 }
