@@ -1,4 +1,5 @@
 const box = document.querySelectorAll(".box");
+const winnerText = document.querySelector(".winner")
 
 
 let currentPlayer = "X"
@@ -36,7 +37,7 @@ function checkWinner(){
         if(pos1 !== "" && pos2 !== "" && pos3 !== ""){
 
             if(pos1 === pos2 && pos2 === pos3){
-                alert(pos1 + " wins")
+                winnerText.innerText=pos1 + " wins!"
             }
         }
     }
