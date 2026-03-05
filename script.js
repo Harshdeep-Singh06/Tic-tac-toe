@@ -47,3 +47,13 @@ function checkWinner(){
 }
 
 resetBtn.addEventListener("click",  resetGame);
+
+function resetGame(){
+    for(let i = 0; i < box.length; i++){
+        box[i].innerText = "";
+    }
+
+    winnerText.innerText = "";
+    gameOver = false;
+    currentPlayer = "X";
+}
