@@ -1,11 +1,12 @@
 const box = document.querySelectorAll(".box");
 const winnerText = document.querySelector(".winner")
+let gameOver = false;
 
 
 let currentPlayer = "X"
 for (let i = 0; i < box.length; i++) {
     box[i].addEventListener('click', function(e){
-        if(this.innerText === ""){
+        if(this.innerText === "" && !gameOver){
           this.innerText = currentPlayer
             checkWinner()
           if(currentPlayer === "X"){
