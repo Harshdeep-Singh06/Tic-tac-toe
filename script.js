@@ -45,3 +45,5 @@ function checkWinner(){
         }
     }
 }
+
+resetBtn.addEventListener("click",  resetGame);
