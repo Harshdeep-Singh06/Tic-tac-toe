@@ -39,6 +39,7 @@ function checkWinner(){
 
             if(pos1 === pos2 && pos2 === pos3){
                 winnerText.innerText=pos1 + " wins!"
+                gameOver = true;
             }
         }
     }
