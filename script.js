@@ -1,6 +1,7 @@
 const box = document.querySelectorAll(".box");
 const winnerText = document.querySelector(".winner")
 let gameOver = false;
+const resetBtn = document.querySelector(".reset");
 
 
 let currentPlayer = "X"
